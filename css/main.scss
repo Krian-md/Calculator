@@ -1,0 +1,54 @@
+
+$backgroundImageApp: url('../assets/image/background.jpg') no-repeat center center fixed; 
+$colorText: snow;
+
+body {
+    margin: 0px;
+    height: 100%;
+    background: $backgroundImageApp;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 10%;
+    min-height: 100vh;
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        * {
+            margin-bottom: 10px;
+            padding: 5px;
+            background: #E65100;
+            border: 2px solid #E65100;
+            color: $colorText;
+            border-radius: 15px;
+        }
+
+        select, button{
+            width: 60px;
+
+            &:hover {
+                background: #FB8C00;
+                cursor: pointer;
+            }
+        }
+
+    }
+    h4 {
+        color: $colorText;
+    }
+    
+    .btn-Style {
+        background:cornflowerblue;
+    }
+}
+
